@@ -1,0 +1,6 @@
+Question,SQL Query,Sample Interview Question
+What is the total sales for all invoices?,SELECT SUM(Total) FROM Walmart Sales,Can you tell me the total revenue generated from all sales?
+What are the top 5 selling product lines?,"SELECT Product line, SUM(Total) AS Total_Sales FROM Walmart Sales GROUP BY Product line ORDER BY Total_Sales DESC LIMIT 5",Which product lines are driving the most sales?
+How many members and non-members are there?,"SELECT Customer type, COUNT(*) AS Customer_Count FROM Walmart Sales GROUP BY Customer type",Can you segment the customer base by membership status?
+What is the average order value?,SELECT AVG(Total) AS Average_Order_Value FROM Walmart Sales,What is the typical amount spent per order?
+What is the peak hour for sales?,"SELECT Time, SUM(Total) AS Total_Sales FROM Walmart Sales GROUP BY Time ORDER BY Total_Sales DESC LIMIT 1",When are the busiest times of the day for sales?

@@ -1,0 +1,6 @@
+Question,SQL Query,Sample Interview Question
+Which branch has the highest gross margin percentage?,"SELECT Branch, AVG(gross margin percentage) AS Avg_Gross_Margin FROM Walmart Sales GROUP BY Branch ORDER BY Avg_Gross_Margin DESC LIMIT 1",Can you identify the most profitable branch based on gross margin?
+What are the highest rated product lines?,"SELECT Product line, AVG(Rating) AS Avg_Rating FROM Walmart Sales GROUP BY Product line ORDER BY Avg_Rating DESC LIMIT 5",Which products are receiving the best customer reviews?
+Is there a difference in average spending between genders?,"SELECT Gender, AVG(Total) AS Avg_Spending FROM Walmart Sales GROUP BY Gender",Can you analyze how spending habits differ between male and female customers?
+What is the most frequently used payment method?,"SELECT Payment, COUNT(*) AS Payment_Count FROM Walmart Sales GROUP BY Payment ORDER BY Payment_Count DESC LIMIT 1",Which payment method is preferred by most customers?
+How much tax revenue was generated?,SELECT SUM(Tax 5%) AS Total_Tax_Revenue FROM Walmart Sales,Can you calculate the total amount of sales tax collected?
